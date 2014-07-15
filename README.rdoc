@@ -1,3 +1,0 @@
-== README
-
-Basic Rails Setup, nothing special here...
