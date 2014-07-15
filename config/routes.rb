@@ -6,7 +6,7 @@ ParseRss::Application.routes.draw do
   # You can have the root of your site routed with "root"
   #root 'rss#index'
   post 'rss' => 'rss#fetch', as: :fetch_rss
-
+  match ':controller(/:action(/:id))',:via => [:get, :post, :PATCH]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
